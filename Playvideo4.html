@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="css/app1.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav id="sidebar" class="sidebar">
+        <div class="sidebar-content js-simplebar">
+          <a class="sidebar-brand" href="youtube.html">
+            <span class="align-middle">Youtube</span>
+          </a>
+
+          <ul class="sidebar-nav">
+            <li class="sidebar-header">Pages</li>
+
+            <li class="sidebar-item active">
+              <a class="sidebar-link" href="youtube.html">
+                <i class="align-middle" data-feather="sliders"></i>
+                <span class="align-middle">Trang Chủ</span>
+              </a>
+            </li>
+
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="pages-profile.html">
+                <i class="align-middle" data-feather="book"></i>
+                <span class="align-middle">Thịnh Hành</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="pages-blank.html">
+                <i class="align-middle" data-feather="briefcase"></i>
+                <span class="align-middle">Kênh đăng kí</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="main">
+        <nav class="navbar navbar-expand navbar-light navbar-bg">
+          <a class="sidebar-toggle d-flex">
+            <i class="hamburger align-self-center"></i>
+          </a>
+
+          <form class="d-none d-sm-inline-block">
+            <div class="input-group input-group-navbar">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Tìm kiếm"
+                aria-label="Search"
+              />
+              <button class="btn" type="button">
+                <i class="align-middle" data-feather="search"></i>
+              </button>
+            </div>
+          </form>
+
+          <div class="navbar-collapse collapse">
+            <ul class="navbar-nav navbar-align">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-icon dropdown-toggle"
+                  href="#"
+                  id="alertsDropdown"
+                  data-toggle="dropdown"
+                >
+                  <div class="position-relative">
+                    <i class="align-middle" data-feather="bell"></i>
+                    <span class="indicator">4</span>
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0"
+                  aria-labelledby="alertsDropdown"
+                >
+                  <div class="dropdown-menu-header">4 New Notifications</div>
+                  <div class="list-group">
+                    <a href="#" class="list-group-item">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                          <i
+                            class="text-danger"
+                            data-feather="alert-circle"
+                          ></i>
+                        </div>
+                        <div class="col-10">
+                          <div class="text-dark">Update completed</div>
+                          <div class="text-muted small mt-1">
+                            Restart server 12 to complete the update.
+                          </div>
+                          <div class="text-muted small mt-1">30m ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                          <i class="text-warning" data-feather="bell"></i>
+                        </div>
+                        <div class="col-10">
+                          <div class="text-dark">VETV</div>
+                          <div class="text-muted small mt-1">
+                            Thêm một video mới .
+                          </div>
+                          <div class="text-muted small mt-1">2h ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                          <i class="text-primary" data-feather="home"></i>
+                        </div>
+                        <div class="col-10">
+                          <div class="text-dark">Login from 192.168.1.8</div>
+                          <div class="text-muted small mt-1">5h ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                          <i class="text-success" data-feather="user-plus"></i>
+                        </div>
+                        <div class="col-10">
+                          <div class="text-dark">New connection</div>
+                          <div class="text-muted small mt-1">
+                            Christina accepted your request.
+                          </div>
+                          <div class="text-muted small mt-1">14h ago</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu-footer">
+                    <a href="#" class="text-muted">Show all notifications</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-icon dropdown-toggle"
+                  href="#"
+                  id="messagesDropdown"
+                  data-toggle="dropdown"
+                >
+                  <div class="position-relative">
+                    <i class="align-middle" data-feather="message-square"></i>
+                  </div>
+                </a>
+                <div
+                  class="dropdown-menu dropdown-menu-lg dropdown-menu-right py-0"
+                  aria-labelledby="messagesDropdown"
+                >
+                  <div class="dropdown-menu-header">
+                    <div class="position-relative">4 New Messages</div>
+                  </div>
+                  <div class="list-group">
+                    <a href="#" class="list-group-item">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                          <img
+                            src="vtvtravel.jpg"
+                            class="avatar img-fluid rounded-circle"
+                            alt="Vanessa Tucker"
+                          />
+                        </div>
+                        <div class="col-10 pl-2">
+                          <div class="text-dark">VTV Travel</div>
+                          <div class="text-muted small mt-1">
+                            Thêm một video mới
+                          </div>
+                          <div class="text-muted small mt-1">15m ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                          <img
+                            src="24h.png"
+                            class="avatar img-fluid rounded-circle"
+                            alt="William Harris"
+                          />
+                        </div>
+                        <div class="col-10 pl-2">
+                          <div class="text-dark">24h</div>
+                          <div class="text-muted small mt-1">
+                            Thêm một video mới
+                          </div>
+                          <div class="text-muted small mt-1">2h ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                          <img
+                            src="lol.jpg"
+                            class="avatar img-fluid rounded-circle"
+                            alt="Christina Mason"
+                          />
+                        </div>
+                        <div class="col-10 pl-2">
+                          <div class="text-dark">Liên minh huyền thoại</div>
+                          <div class="text-muted small mt-1">
+                            Thêm một video mới
+                          </div>
+                          <div class="text-muted small mt-1">4h ago</div>
+                        </div>
+                      </div>
+                    </a>
+                    <a href="#" class="list-group-item">
+                      <div class="row g-0 align-items-center">
+                        <div class="col-2">
+                          <img
+                            src="fpt.png"
+                            class="avatar img-fluid rounded-circle"
+                            alt="Sharon Lessman"
+                          />
+                        </div>
+                        <div class="col-10 pl-2">
+                          <div class="text-dark">FPT Play</div>
+                          <div class="text-muted small mt-1">
+                            Thêm một video mới
+                          </div>
+                          <div class="text-muted small mt-1">5h ago</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="dropdown-menu-footer">
+                    <a href="#" class="text-muted">Show all messages</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-icon dropdown-toggle d-inline-block d-sm-none"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  <i class="align-middle" data-feather="settings"></i>
+                </a>
+
+                <a
+                  class="nav-link dropdown-toggle d-none d-sm-inline-block"
+                  href="#"
+                  data-toggle="dropdown"
+                >
+                  <img
+                    src="muinme.jpg"
+                    class="avatar img-fluid rounded mr-1"
+                    alt="muinme"
+                  />
+                  <span class="text-dark">Phạm Anh Tú </span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                  <a class="dropdown-item" href="pages-profile.html"
+                    ><i class="align-middle mr-1" data-feather="user"></i>
+                    Profile</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><i class="align-middle mr-1" data-feather="pie-chart"></i>
+                    Analytics</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="pages-settings.html"
+                    ><i class="align-middle mr-1" data-feather="settings"></i>
+                    Settings & Privacy</a
+                  >
+                  <a class="dropdown-item" href="#"
+                    ><i
+                      class="align-middle mr-1"
+                      data-feather="help-circle"
+                    ></i>
+                    Help Center</a
+                  >
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Log out</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <main class="content">
+          <div class="row">
+            <div class="col-md-8">
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/5QbGsXrEsuE"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <p>
+                (One Piece chương 1002 ) - Luffy khắc chế Lửa và Sấm Sét , Law
+                tấn công nội tạng Kaido
+              </p>
+            </div>
+            <iv class="col-md-4">
+              <div class="video">
+                <a href="Playvideo5.html">
+                  <img class="img" src="hasangg.PNG" />
+                  <p class="textvideo">
+                    Chẳng Thể Tìm Được Em ft Hôm Nay Em Cưới Rồi - Những Bản
+                    Lofi Việt Freak D Mix Nhẹ Nhàng Cực Chill
+                  </p>
+                </a>
+              </div>
+              <div class="video">
+                <a href="Playvideo3.html">
+                  <img class="img" src="sofm.PNG" />
+                  <p class="textvideo">
+                    [Highlight SN vs OMG-GAME 2]SUNING GIAO TRANH KHÔNG CHO OMG
+                    CƠ HỘI NÀO - BIN ĐÈ BẸP ĐƯỜNG TRÊN
+                  </p>
+                </a>
+              </div>
+              <div class="video">
+                <a href="Playvideo.html">
+                  <img class="img" src="mtp.PNG" />
+                  <p class="textvideo">
+                    FREE FIRE x SƠN TÙNG M-TP | 'SKYLER' THEME SONG | OFFICIAL
+                  </p>
+                </a>
+              </div>
+              <div class="video">
+                <a href="Playvideo2.html">
+                  <img class="img" src="goku.PNG" />
+                  <p class="textvideo">
+                    Sức mạnh Bản Năng Vô Cực , 5 người sử dụng Ultra Instinct
+                    mạnh nhất trong Dragon Ball Super
+                  </p>
+                </a>
+              </div>
+              <div class="video">
+                <a href="Playvideo7.html">
+                  <img class="img" src="FAPtv.PNG" />
+                  <p class="textvideo">
+                    FAPTV Tổng hợp: Tuyển tập Hài Tết Phần 4
+                  </p>
+                </a>
+              </div>
+              <div class="video">
+                <a href="Playvideo6.html">
+                  <img class="img" src="covid.PNG" />
+                  <p class="textvideo">
+                    Hải Dương là ổ dịch Covid-19 lớn, số ca mắc mới sẽ tiếp tục
+                    tăng nhanh | VTC Now
+                  </p>
+                </a>
+              </div>
+              <div class="video">
+                <a href="Playvideo1.html">
+                  <img class="img" src="bilong.PNG" />
+                  <p class="textvideo">
+                    BI LONG ĐẠI CA Tập 5 | Hứa Minh Đạt, Khả Như, Steven Nguyễn,
+                    Lợi Trần | Webdrama Yang Hồ 2021
+                  </p>
+                </a>
+              </div>
+            </iv>
+          </div>
+        </main>
+
+        <footer class="footer">
+          <div class="container-fluid">
+            <div class="row text-muted">
+              <div class="col-6 text-left">
+                <p class="mb-0">
+                  <a href="index.html " class="text-muted"
+                    ><strong>Youtube Demo</strong></a
+                  >
+                  &copy;
+                </p>
+              </div>
+              <div class="col-6 text-right">
+                <ul class="list-inline">
+                  <li class="list-inline-item">
+                    <a class="text-muted" href="# ">Support</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted" href="# ">Help Center</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted" href="# ">Privacy</a>
+                  </li>
+                  <li class="list-inline-item">
+                    <a class="text-muted" href="# ">Terms</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+  <script src="js/app.js "></script>
+</html>
